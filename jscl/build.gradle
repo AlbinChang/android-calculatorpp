@@ -22,6 +22,11 @@
 
 apply plugin: 'java'
 
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 dependencies {
     implementation 'com.google.code.findbugs:jsr305:2.0.3'
     implementation 'xerces:xercesImpl:2.8.0'
